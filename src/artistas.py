@@ -33,8 +33,8 @@ def ejercicio3(registros, fecha):
     minimo = min(res, key=lambda x:x.hora_apertura)
     return(minimo.artista,minimo.fecha)
 
-def ejercicio4(registros,mes,a�o):
-    res = [t for t in registros if t.fecha.year==a�o and t.fecha.month==mes]
+def ejercicio4(registros,mes,año):
+    res = [t for t in registros if t.fecha.year==año and t.fecha.month==mes]
     lista_ordenada = sorted(res, key=lambda x:x.fecha)
     lista_artistas =[]
     for t in lista_ordenada:
